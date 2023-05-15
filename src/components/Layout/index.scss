@@ -26,12 +26,14 @@
     min-height: 566px;
     position: absolute;
     opacity: 0 auto;
+    top: 5%;
+    margin: 9 auto;
     z-index: 1;
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
-.minecraft-page{
+.container.info-page{
     .text-zone {
         position: absolute;
         left: 10%;
@@ -41,6 +43,7 @@
         vertical-align: middle;
         display: 'table-cell';
         max-height: 90%;
+    }
 
         h1 {
             font-size: 53px;
@@ -50,7 +53,7 @@
             margin-top: 0;
             position: relative;
             left: 10px;
-            &::before{
+            &:before{
                 content: '<h1>';
                 font-family: 'La Belle Aurore';
                 font-size: 18px;
@@ -59,7 +62,7 @@
                 opacity:0.6;
                 line-height: 10px;
             }
-            &::after {
+            &:after {
                 content: '<h1 />';
                 font-family: 'La Belle Aurore';
                 font-size: 18px;
@@ -72,7 +75,7 @@
             }
         }
         p {
-            font-style: 14px;
+            font-style: 16px;
             color: #ffffff;
             font-family: sans-serif;
             font-weight: 300;
@@ -87,7 +90,9 @@
             &:nth-of-type(3){
                 animation-delay: 1.3s;
             }
+            &:nth-of-type(4){
+                animation-delay: 1.4s;
+            }
         }
-    }
-    
+
 }

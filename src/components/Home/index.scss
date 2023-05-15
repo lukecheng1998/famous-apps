@@ -63,6 +63,7 @@
         padding: 10px;
         border: 1px solid #ffd780;
         margin-top: 25px;
+        margin-right: 25px;
         float:left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
@@ -70,5 +71,9 @@
             background: #ffd780;
             color: #333333
          }
+    }
+    .img{
+        height: 450px;
+        width: 250px;
     }
 }
