@@ -21,9 +21,18 @@ const Minecraft = () => {
             <span className={`${letterClass} _19`}>t</span>
           </h1>
 
-          <p>Test paragraph 1</p>
-          <p>Test paragraph 2</p>
-          <p>Test paragraph 3</p>
+          <p>
+            Minecraft was created by Mojang studios and released in 2011. This
+            game has no story guideline or win conditions. It is one of the most
+            best celebrated and most played games in the entire world.
+          </p>
+          <p>
+            In the game, players play in an open world where they are free to
+            gather resources, craft and build items, build structures, and many
+            more. Depending on the mode, players are free to fight with other
+            players or cooporate with one another.
+          </p>
+          <p>Test paragraph</p>
         </div>
       </div>
       <Loader type="pacman" />
