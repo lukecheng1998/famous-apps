@@ -1,7 +1,10 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import {faMusic, faGuitar, faMobile, faIcons, faShare} from '@fortawesome/free-solid-svg-icons'
+import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const TikTok = () => {
   const [letterClass] = useState('text-animate')
@@ -40,6 +43,28 @@ const TikTok = () => {
             nothing to do. In 2023, Tiktok was getting banned for security
             concerns by lawmakers. They didn't successfully win this court case.
           </p>
+        </div>
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faTiktok} color="#000000" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faMusic} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faGuitar} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faMobile} color="#5ED4F4" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faIcons} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faShare} color="#EC4D28" />
+            </div>
+          </div>
         </div>
       </div>
       <Loader type='pacman' />

@@ -1,7 +1,8 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import {faCube, faCubes, faCubesStacked, faUsers, faLaptop, faGamepad} from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Minecraft = () => {
   const [letterClass] = useState('text-animate')
@@ -33,8 +34,30 @@ const Minecraft = () => {
             players or cooporate with one another.
           </p>
         </div>
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faCube} color="#DD0031" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faCubes} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faCubesStacked} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faUsers} color="#5ED4F4" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faLaptop} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faGamepad} color="#EC4D28" />
+            </div>
+          </div>
+        </div>
       </div>
-      <Loader type='pacman' />
+      <Loader type="pacman" />
     </>
   )
 }
