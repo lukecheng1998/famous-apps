@@ -1,5 +1,7 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import {faYoutube} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFilm, faVideo, faHeadphones, faTv, faMicrophone} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import Loader from 'react-loaders'
 
@@ -58,6 +60,28 @@ const Twitter = () => {
             everyday on App and Website. It will continue to grow and grow until
             a better website is created.
           </p>
+        </div>
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faFilm} color="#5ED4F4" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faVideo} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faHeadphones} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faYoutube} color="#D83A12" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faTv} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faMicrophone} color="#EC4D28" />
+            </div>
+          </div>
         </div>
       </div>
       <Loader type='pacman' />

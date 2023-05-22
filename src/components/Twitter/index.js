@@ -1,7 +1,9 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import {faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faMessage, faComments, faInbox, faBell, faAddressCard} from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Twitter = () => {
   const [letterClass] = useState('text-animate')
@@ -40,6 +42,28 @@ const Twitter = () => {
             been in a lot of controversy due to moderation issues, freedom of
             speech issues, and issues with its verification policy.
           </p>
+        </div>
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faTwitter} color="#5ED4F4" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faMessage} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faComments} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faInbox} color="#D83A12" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faBell} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faAddressCard} color="#EC4D28" />
+            </div>
+          </div>
         </div>
       </div>
       <Loader type='pacman' />
