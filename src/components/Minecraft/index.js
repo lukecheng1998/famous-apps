@@ -32,10 +32,9 @@ const Minecraft = () => {
             more. Depending on the mode, players are free to fight with other
             players or cooporate with one another.
           </p>
-          <p>Test paragraph</p>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type='pacman' />
     </>
   )
 }

@@ -7,7 +7,7 @@ const TikTok = () => {
   const [letterClass] = useState('text-animate')
   return (
     <>
-      <div className="container info-page">
+      <div className="container tiktok-page">
         <div className="text-zone">
           <h1>
             <span className={letterClass}>T</span>
@@ -23,7 +23,7 @@ const TikTok = () => {
             networking service that was similar to Facebook and Instagram. Since
             Facebook and Instagram was banned in China, it would be a great way
             for people in China to also enjoy similar features. This was a
-            genius marketing business for ByteDance.{' '}
+            genius marketing business for ByteDance.
           </p>
           <p>
             In 2017, ByteDance bought Musical.ly that allowed users to make 15
@@ -42,7 +42,7 @@ const TikTok = () => {
           </p>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type='pacman' />
     </>
   )
 }

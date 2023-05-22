@@ -7,7 +7,7 @@ const Twitter = () => {
   const [letterClass] = useState('text-animate')
   return (
     <>
-      <div className="container info-page">
+      <div className="container twitter-page">
         <div className="text-zone">
           <h1>
             <span className={letterClass}>T</span>
@@ -42,7 +42,7 @@ const Twitter = () => {
           </p>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type='pacman' />
     </>
   )
 }
